@@ -1,0 +1,30 @@
+[
+  {
+    "id": "shark-1",
+    "name": "Great White",
+    "species": "Carcharodon carcharias",
+    "size": "15 ft",
+    "location": "California coast",
+    "status": "Vulnerable",
+    "image": "images/whiteshark.jpg"
+
+  },
+  {
+    "id": "shark-2",
+    "name": "Hammerhead",
+    "species": "Sphyrna mokarran",
+    "size": "13 ft",
+    "location": "Tropical waters",
+    "status": "Endangered",
+    "image": "images/hammerhead.jpg"
+  },
+  {
+    "id": "shark-3",
+    "name": "Whale Shark",
+    "species": "Rhincodon typus",
+    "size": "40 ft",
+    "location": "Open ocean",
+    "status": "Endangered",
+    "image": "images/whaleshark.jpg"
+  }
+]

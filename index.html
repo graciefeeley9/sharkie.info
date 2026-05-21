@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <div id="header-title">
+                <p class="eyebrow">Shark Registry</p>
+                <h1>Shark Database</h1>
+                <p class="subtitle">A simple app structure for storing and browsing shark records.</p>
+            </div>
+            <div class="header-actions">
+                <button id="open-search" type="button">Search sharks</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="panel" id="database-panel">
+                <div class="panel-heading">
+                    <h2>Shark Database</h2>
+                    <p class="panel-copy">Browse the full registry of shark records.</p>
+                </div>
+                <div class="card-grid" id="database-list"></div>
+            </section>
+
+            <section class="panel" id="search-results" hidden>
+                <div class="panel-heading">
+                    <h2>Search sharks</h2>
+                    <label class="search-label">
+                        
+                        <input id="search-input" type="search" placeholder="Search by name or species" autocomplete="off" />
+                    </label>
+                    <p id="search-query" class="subtitle">Type a name or species to begin.</p>
+                </div>
+                <div class="card-grid" id="search-list"></div>
+                <p id="no-results" class="empty-state" hidden>No sharks match that query.</p>
+                <button id="close-search" type="button" class="secondary-button">Back to menu</button>
+            </section>
+
+            <section class="panel" id="shark-detail" hidden>
+                <h2>Shark Details</h2>
+                <div class="detail-row"><strong>Name:</strong> <span id="detail-name"></span></div>
+                <div class="detail-row"><strong>Species:</strong> <span id="detail-species"></span></div>
+                <div class="detail-row"><strong>Size:</strong> <span id="detail-size"></span></div>
+                <div class="detail-row"><strong>Location:</strong> <span id="detail-location"></span></div>
+                <div class="detail-row"><strong>Status:</strong> <span id="detail-status"></span></div>
+                <div class="detail-row"><strong>Image:</strong> <img id="detail-image" alt="Shark image" style="max-width: 200px; height: auto;"></div>
+                <button id="close-detail" type="button">Close</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
